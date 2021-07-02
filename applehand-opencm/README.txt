@@ -1,0 +1,1 @@
+If introducing any new sensors, be sure that they use I2Cdev.h instead of Wire.h for their I2C communication, as Wire.h is implemented with software I2C on the OpenCM 9.04. For more information, see this thread: https://github.com/ROBOTIS-GIT/OpenCM9.04/issues/14
