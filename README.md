@@ -22,7 +22,7 @@ Next, install the `ros-<distro>-rosserial-arduino` package.
 
 Now, in your ROS workspace packages folder (usually `~/catkin_ws/src`), download the repository via:
 ```
-git clone https://github.com/brianjohnzhang/applehand.git
+git clone https://github.com/cravetzm/applehand.git
 ```
 Then, return to your ROS workspace folder (usually `~/catkin_ws/`) and run `catkin_make`.
 
@@ -45,14 +45,14 @@ to
 
 ### Communication and Sensing Options
 
-At the top of [the main .ino file](https://github.com/brianjohnzhang/applehand/blob/main/arduino/applehand-opencm/applehand-opencm.ino), there are four booleans that control sensing and communication:
+At the top of [the main .ino file](https://github.com/cravetzm/applehand/blob/main/arduino/applehand-opencm/applehand-opencm.ino), there are four booleans that control sensing and communication:
 ```
 const bool USE_ROSSERIAL = true;
 const bool READ_IMUS = true;
 const bool READ_PRESSURES = true;
 const bool READ_JOINT_STATES = true;
 ```
-These are fairly self-explanatory. If `USE_ROSSERIAL = false`, messages will be displayed as text in normal Serial communication and basic commands can be sent as letters (see the bottom of [the main .ino file](https://github.com/brianjohnzhang/applehand/blob/main/arduino/applehand-opencm/applehand-opencm.ino) for details).
+These are fairly self-explanatory. If `USE_ROSSERIAL = false`, messages will be displayed as text in normal Serial communication and basic commands can be sent as letters (see the bottom of [the main .ino file](https://github.com/cravetzm/applehand/blob/main/arduino/applehand-opencm/applehand-opencm.ino) for details).
 
 If any of the `READ_<data> = false`, their respective sensors will not be read from and no messages related to that sensor will be sent. This will impact the overall sample rate of the system.
 
