@@ -22,7 +22,7 @@ Next, install the `ros-<distro>-rosserial-arduino` package.
 
 Now, in your ROS workspace packages folder (usually `~/catkin_ws/src`), download the repository via:
 ```
-git clone https://github.com/cravetzm/applehand.git
+git clone https://github.com/cravetzm/Apple-Hand.git
 ```
 Then, return to your ROS workspace folder (usually `~/catkin_ws/`) and run `catkin_make`.
 
